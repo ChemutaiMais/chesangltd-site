@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Home - ChesangLTD{% endblock %}
+
+{% block content %}
+  <section class="hero-banner reveal">
+    <div class="overlay">
+      <h1>Build Brands That Stick</h1>
+      <p>We design identities, print impact, and deliver branded tools that make your business unforgettable.</p>
+      <a href="{{ url_for('services') }}" class="cta-button">Explore Our Services</a>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="hero reveal">
+    <h1>Welcome to ChesangLTD</h1>
+    <p>We craft bold identities, print high-impact materials, and deliver branded tools that make your business unforgettable.</p>
+    <a href="{{ url_for('services') }}" class="cta-button">Explore Our Services</a>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="tagline reveal">
+    <h2>Design. Print. Impress.</h2>
+    <p>Trusted by hundreds of businesses across South Sudan and beyond.</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="why-choose reveal">
+    <h2>Why Choose ChesangLTD?</h2>
+    <ul>
+      <li>✅ Custom branding that reflects your values</li>
+      <li>✅ High-quality printing with fast turnaround</li>
+      <li>✅ Branded office tools that elevate your team</li>
+    </ul>
+  </section>
+{% endblock %}
+

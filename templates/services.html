@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Services - ChesangLTD{% endblock %}
+
+{% block content %}
+  <section class="services-intro">
+    <h2>Our Services</h2>
+    <p>We specialize in branding solutions that help businesses stand out and stay memorable. Explore our core offerings below.</p>
+  </section>
+
+  <section class="service">
+    <h3>Branding</h3>
+    <div class="branding-gallery">
+      <img src="{{ url_for('static', filename='logo design.png') }}" alt="Logo Design" class="brand-photo">
+      <img src="{{ url_for('static', filename='package.jpg') }}" alt="Packaging Design" class="brand-photo">
+      <img src="{{ url_for('static', filename='visibility.jpg') }}" alt="Visual Identity" class="brand-photo">
+    </div>
+    <p>From logo creation to packaging and full identity systems, we craft visuals that speak your brand’s language.</p>
+  </section>
+
+  <section class="service">
+    <h3>Printing</h3>
+    <img src="{{ url_for('static', filename='signage.png') }}" alt="Print Materials" class="service-photo">
+    <p>Flyers, business cards, banners — professionally printed to leave a lasting impression.</p>
+  </section>
+
+  <section class="service">
+    <h3>Office Supplies</h3>
+    <img src="{{ url_for('static', filename='supplies.jpg') }}" alt="Branded Office Supplies" class="service-photo">
+    <p>Custom notebooks, pens, folders, and more — branded tools for everyday professionalism.</p>
+  </section>
+{% endblock %}
